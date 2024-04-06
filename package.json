@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "9.8.0"
+    "node": "18.x"
   },
   "name": "my-todo",
   "version": "1.0.0",
