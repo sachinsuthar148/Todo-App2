@@ -1,8 +1,24 @@
 body{
-    background-color: rgb(229, 76, 244) !important;
-    color: white !important;
+    background-image: url("https://source.unsplash.com/random");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    /* filter: blur(23px); */
+    backdrop-filter: none;
 }
 
-table,td,th{
+table,tr,td,th{
+    /* border: 1px solid black !important; */
+    padding: 1rem;
+}
+
+table{
+    border: 3px solid black !important;
+    border-radius:23% !important;
+    margin: 1%;
+}
+
+tr{
+    background-color: bisque;
     border: 1px solid black !important;
 }

@@ -9,9 +9,10 @@
 </head>
 <body>
     <center>
+        <br>
         <h1>Sachin's TODO</h1>
-
-        <a href="/new" class="btn btn-primary-outline">Add New</a>
+        <br>
+        <a href="/new" class="btn btn-success">Add New</a>
         <br><br>
         <table>
             <tr>
@@ -25,7 +26,7 @@
                 <!-- <td>1.</td> -->
                 <td><%= list.date ? `${new Date(list.date).getDate().toString().padStart(2, '0')}.${(new Date(list.date).getMonth() + 1).toString().padStart(2, '0')}.${new Date(list.date).getFullYear()}` : '' %></td>
                 <td><%= list.content %></td>
-                <td> <form action="/<%=list.id %>?_method=DELETE" method="post"><button>Delete</button></form></td>
+                <td> <form action="/<%=list.id %>?_method=DELETE" method="post"><button class="btn btn-danger">Delete</button></form></td>
             </tr>
             <% } %>
         </table>
